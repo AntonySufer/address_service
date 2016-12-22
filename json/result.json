@@ -1,0 +1,14 @@
+{
+	"data" :[{
+      "name":"linda",
+      "sex":"girl",
+    },
+    {
+      "name":"cylinder",
+      "sex":"man",
+    },
+    {
+      "name":"david",
+      "sex":"man",
+    }]
+}

@@ -1,0 +1,82 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+	.active{
+		color: red;
+	}
+
+</style>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<script type="text/javascript" src="./js/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://static.mljiadev.cn/wechat/o2o/resources/javascript/library/jquery.base64.js?v=1.0.0.3" charset="utf-8"></script>
+
+</head>
+<body>
+
+<!--服务区域 html  s-->
+ <!--省市区隐藏值-->
+          <input type="hidden" name="province_value" value=""/>
+          <input type="hidden" name="city_value" value=""/>
+          <input type="hidden" name="area_value" value=""/>
+  <div class="area-modal-wrap">
+    <div id="shawn_show" class="modal-mask" style="position: fixed;background-color: rgba(0,0,0,0.6);top: 0;left: 0;right: 0;bottom: 0;z-index: 1000;"></div>
+    <div class="area-modal" id="chose_address_win" style="position:fixed;background-color:white; fixed;z-index: 9999; top: 202.5px; height: 545px;width: 986px;left: 25%; ">
+
+      <div id="select_show" style="height:500px;overflow:overlay">
+        <!--选择地区模板 s-->
+         <!--  <div class="panel panel-primary" style="margin-bottom:2px">
+           <div class="panel-heading" style="padding: 1px 15px;background-color: #96d0f0;color: #31708f;">
+             <input type="checkbox"/>广东
+             <a style="cursor:hand"><i class="fa fa-sort-desc"  aria-hidden="true"></i></a>
+           </div>
+           <div class="panel-body" style="padding:0px;margin:2px 0 2px 25px;">
+               <div class="panel panel-info" style="margin-bottom:0px">
+                 <div class="panel-heading" style="padding: 1px 15px;background-color: #d9edf7;">
+                   <input type="checkbox"/>深圳
+                   <a style="cursor:hand"><i class="fa fa-sort-desc"  aria-hidden="true"></i></a>
+                 </div>
+                 <div class="panel-body"style="padding: 1px 30px;">
+                   <input type="checkbox"/>龙龟
+                   <input type="checkbox"/>南山
+                   <input type="checkbox"/>福田
+                 </div>
+               </div>
+         
+              <div class="panel panel-info" style="margin-bottom:0px">
+                 <div class="panel-heading" style="padding: 1px 15px;background-color: #d9edf7;"> <input type="checkbox"/>深圳<a href="javascript:;">展开</a></div>
+                 <div class="panel-body"style="padding: 1px 30px;">
+                   <input type="checkbox"/>龙龟
+                   <input type="checkbox"/>南山
+                   <input type="checkbox"/>福田
+                 </div>
+              </div>
+         
+         
+           </div>
+         </div> -->
+        <!--选择地区模板 end-->
+
+
+
+      </div>
+      <!--按钮 s-->
+      <div style="text-align:center;margin-top: 5px;">
+        <button type="button" id="sure_but" class="btn btn-default" style="margin-right: 20px;">确定</button>
+        <button type="button" id="close_but" class="btn btn-default">取消</button>
+      </div>
+
+      <!--按钮 s-->
+    </div>
+
+  </div>
+
+ <button type="button" id="address_but" class="btn btn-default" style="margin-right: 20px;">选择服务的地区</button>
+   
+  <p class="privence_value"></p>
+  <p class="city_value"></p>
+  <p class="area_value"></p>
+ 
+<script type="text/javascript" src="./js/supplier_form.js"></script>
+</body>
+</html>
